@@ -1,0 +1,110 @@
+.heading {
+padding: 10px;
+font-size: 20px;
+text-align: center;
+background: aquamarine;
+}
+
+.heading h1, .heading h3, .heading h5 {
+    display: block; /* Ensure each heading is on its own line */
+    margin: 10px 0; /* Adds space between headings */
+}
+
+           
+ .section {
+background-color: #C9E9FA;
+padding: 20px;
+margin-top: 10px;
+}
+
+.book {
+background-color: darkgoldenrod;
+padding: 20px;
+margin-top: 10px;
+
+}
+/*used chat for the following: (the key frames move from 0-100% and they indicate how much to do each thing for evry loop*/
+ @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .bouncy {
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+
+  /* Up and Down Bounce */
+@keyframes bounceUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.bounceupdown {
+    display: inline-block;
+    animation: bounceUpDown 1s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* Side to Side Bounce */
+@keyframes bounceSide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+}
+
+.bounceside {
+    display: inline-block;
+    animation: bounceSide 1s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* Zoom In and Out Bounce */
+@keyframes bounceZoom {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+.bouncezoom {
+    display: inline-block;
+    animation: bounceZoom 1s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* Rotating Bounce */
+@keyframes bounceRotate {
+    0%, 100% { transform: rotate(-6deg); }
+    50% { transform: rotate(6deg); }
+}
+
+.bouncespin {
+    display: inline-block;
+    animation: bounceRotate 1s ease-in-out infinite;
+    will-change: transform;
+}
+
+@keyframes jitter {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(1px, -1px); }
+    60% { transform: translate(-1px, -1px); }
+    80% { transform: translate(1px, 1px); }
+    100% { transform: translate(0, 0); }
+}
+
+.jitter {
+    display: inline-block;
+    animation: jitter 0.1s infinite;
+}
+
+@keyframes letterSpacing {
+    0% { letter-spacing: normal; }      /* Initial state */
+    50% { letter-spacing: 5px; }       /* Increase space */
+    100% { letter-spacing: normal; }   /* Return to normal */
+}
+
+.expand {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    animation: letterSpacing 1.5s ease-in-out infinite; /* Loop the animation */
+}
